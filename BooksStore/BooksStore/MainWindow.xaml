@@ -1,0 +1,128 @@
+﻿<Window x:Class="BooksStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BooksStore"
+        mc:Ignorable="d"
+        Title="BooksStoreApp" Height="700" Width="800">
+    <Grid x:Name="vat_textBox" Margin="0,9,0,-25">
+        <Grid.Background>
+            <ImageBrush Stretch="Uniform"/>
+        </Grid.Background>
+        <Grid Margin="0,-12,0,604">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop/>
+                    <GradientStop Color="#FF8DE9E3" Offset="0.929"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <Grid Margin="0,592,0,0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop/>
+                    <GradientStop Color="#7F0FF045" Offset="0.929"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Label Content="Author Name&#xD;&#xA;" HorizontalAlignment="Left" Margin="134,-450,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.172,-11.701" Height="32" FontWeight="Bold" FontStyle="Italic">
+                <Label.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.OpacityMask>
+            </Label>
+        </Grid>
+        <Label Content="Book Name" HorizontalAlignment="Left" Margin="137,105,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <Label Content="Publication Name" HorizontalAlignment="Left" Margin="105,177,0,0" VerticalAlignment="Top" Width="114" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <Label Content="Price  P.U  *" HorizontalAlignment="Left" Margin="135,213,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <Label Content="Quantity  *" HorizontalAlignment="Left" Margin="137,245,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="135,281,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.276,-0.237" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="132,346,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <TextBox x:Name="bookName_textbox" HorizontalAlignment="Left" Margin="280,113,0,0" TextWrapping="Wrap" Text="Enter book name:" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" Opacity="0.995"/>
+        <TextBox HorizontalAlignment="Left" Margin="1114,549,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="authorName_textbox" HorizontalAlignment="Left" Margin="280,149,0,0" TextWrapping="Wrap" Text="Enter Author Name" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" Opacity="0.995"/>
+        <TextBox x:Name="price_textbox" HorizontalAlignment="Left" Margin="280,220,0,0" TextWrapping="Wrap" Text="Enter book price" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" Opacity="0.995"/>
+        <TextBox x:Name="bookQuantity_textbox" HorizontalAlignment="Left" Margin="280,250,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" Opacity="0.995"/>
+        <TextBox x:Name="bookPurchase_date_textbox" HorizontalAlignment="Left" Margin="274,285,0,0" TextWrapping="Wrap" Text="Please enter Date" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" Opacity="0.995" Background="#FFEBA0A0"/>
+        <TextBlock x:Name="total_textblock" HorizontalAlignment="Left" Margin="274,346,0,0" TextWrapping="Wrap" Text="Total Priice" VerticalAlignment="Top" Height="28" Width="112" Foreground="#FF59A442"/>
+        <Label x:Name="vat" Content="Vat" HorizontalAlignment="Left" Margin="132,315,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.276,-0.237" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <Label x:Name="vat_Copy" Content="+ 5% Vat" HorizontalAlignment="Left" Margin="441,313,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.276,-0.237" FontWeight="Bold" FontStyle="Italic">
+            <Label.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.OpacityMask>
+        </Label>
+        <ComboBox x:Name="authorName_ComboBox" HorizontalAlignment="Left" Margin="280,181,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="authorName_ComboBox_SelectionChanged"/>
+        <DataGrid x:Name="dataGridview_datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,423,28,0" Background="#FFC9A58D" MaxHeight="105" VerticalAlignment="Top" SelectionChanged="dataGridview_datagrid_SelectionChanged" AutoGenerateColumns="False" CanUserAddRows="False" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Item ID" Binding="{Binding ItemID}" Width="*" />
+                <DataGridTextColumn Header="Name" Binding="{Binding BookName}" Width="*" />
+                <DataGridTextColumn Header="Author" Binding="{Binding AuthorName}" Width="*" />
+                <DataGridTextColumn Header="Publications" Binding="{Binding PublicationsName}" Width="*" />
+                <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="*" />
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*" />
+                <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice}" Width="*" />
+                <DataGridTextColumn Header="Created Date" Binding="{Binding Created}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="add_button" Content="Add" HorizontalAlignment="Left" Margin="567,367,0,0" VerticalAlignment="Top" Width="109" Background="#FF4FBE27" BorderBrush="#FF4ACE78" FontWeight="Bold" FontStyle="Italic" Click="add_button_Click"/>
+        <Button x:Name="cancel_button" Content="Clear" HorizontalAlignment="Left" Margin="28,378,0,0" VerticalAlignment="Top" Width="109" Background="#FFFFD8D8" FontWeight="Bold" Click="cancel_button_Click"/>
+        <Button x:Name="saveData_button" Content="Save" HorizontalAlignment="Left" Margin="651,555,0,0" VerticalAlignment="Top" Height="32" Width="96" Background="#FFD9F08E" FontWeight="Bold" Click="saveData_button_Click"/>
+        <TextBox x:Name="vat_textbox" HorizontalAlignment="Left" Margin="274,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontWeight="Bold" Opacity="0.995"/>
+
+
+    </Grid>
+</Window>
